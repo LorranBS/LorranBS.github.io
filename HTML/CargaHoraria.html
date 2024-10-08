@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/Index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="nome-sistema">Nome do Sistema</div>
+        <div class="user-info">
+            <div>Nome:</div>
+            <div>Matricula:</div>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li>Gerenciamento de professor
+                <ul class="submenu">
+                    <li><a href="CargaHoraria.html">Carga horária</a></li>
+                    <li><a href="AvaliacaoDesempenho.html">Avaliação de desempenho</a></li>
+                    <li><a href="Afastamento.html">Afastamento</a></li>
+                </ul>
+            </li>
+            <li>Gerenciamento de disciplina
+                <ul class="submenu">
+                    <li><a href="DefinirProfessor.html">Definir professor</a></li>
+                    <li><a href="CargaHoraria.html">Definir horário</a></li>
+                    <li><a href="DefinirSalas.html">Definir salas</a></li>
+                </ul>
+            </li>
+            <li>Consultas
+                <ul class="submenu">
+                    <li><a href="HorarioPedido.html">Horários do período</a></li>
+                </ul>
+            </li>
+
+            <li> <a href="/Index.html"> Página Inicial</a>
+
+            </li>
+        </ul>
+    </nav>
+
+    <div class="cargaHoraria">
+
+        <div class="pesquisa ">
+            <div class="titulo">
+                <h1> Consulta de Carga Horária</h1> 
+            </div>
+
+            <div class="consultar">
+                <p>
+                    Matrícula do Professor:
+                </p>
+
+                <input type="text" placeholder="Digite a Matrícula do Professor">
+                
+                <button> Buscar</button>
+
+            </div>
+
+            <div class="dropdownProfessor">
+
+                <p>Selecionar Professor:</p>
+
+                <!-- <button> Dropdown de Professor </button> -->
+                <select name="languages" id="lang">
+                    <option value="João">João</option>
+                    <option value="Mario">Mario</option>
+                    <option value="Miguel">Miguel</option>
+                    <option value="Lucas Carlos">Lucas Carlos</option>
+                    <option value="Murilo">Murilo</option>
+                    <option value="Bruno">Bruno</option>
+                    <!-- Adicione outras opções aqui -->
+                </select>
+
+            </div>
+
+
+            <div class="conteudo">
+                <P>
+                    Professor:  João <br>
+                    Disciplina: Gerência de Projetos <br>
+                    Carga Horária Total: 12 horas / semana
+                    
+                </P>
+
+                <P>
+                    Professor:  Mario <br>
+                    Disciplina: Estrutura de Dados
+                    <br>
+                    Carga Horária Total: 10 horas / semana
+                </P>
+                
+                <P>
+                    Professor:  Miguel <br>
+                    Disciplina: Lógica Matemática
+                    <br>
+                    Carga Horária Total: 12 horas / semana
+                </P>
+
+            </div>
+
+        </div>
+
+        <div class="tabela">
+            <div class="titulo">
+
+                <h2>
+                    Turmas e Horários:
+                </h2>
+
+            </div>
+
+            <div class="informacao">
+                <p>
+                    Disciplina: Programação Orientada a Obijeto <br>
+                    Período: Segundo <br>
+                    Turma: 20242.120.2N <br>
+                    Quinta-feira: 18:20 - 21:50 <br>
+                    Sala: E 101
+                </p>
+
+                <p>
+                    Disciplina: Algebra <br>
+                    Período: Segundo <br>
+                    Turma: 20242.122.2N <br>
+                    Quinta-feira: 18:20 - 21:50 <br>
+                    Sala: E 102
+                </p>
+                <p>
+                    Disciplina: Banco de Dados <br>
+                    Pesíodo: Quarto <br>
+                    Turma: 20242.121.2N <br>
+                    Quinta-feira: 18:20 - 21:50 <br>
+                    Sala: E 103
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Trabalho de Gerencia de Projeto. Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="/contato">Contato</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/Index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="nome-sistema">Nome do Sistema</div>
+        <div class="user-info">
+            <div>Nome:</div>
+            <div>Matricula:</div>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li>Gerenciamento de professor
+                <ul class="submenu">
+                    <li><a href="CargaHoraria.html">Carga horária</a></li>
+                    <li><a href="AvaliacaoDesempenho.html">Avaliação de desempenho</a></li>
+                    <li><a href="Afastamento.html">Afastamento</a></li>
+                </ul>
+            </li>
+            <li>Gerenciamento de disciplina
+                <ul class="submenu">
+                    <li><a href="DefinirProfessor.html">Definir professor</a></li>
+                    <li><a href="DefinirHorario.html">Definir horário</a></li>
+                    <li><a href="DefinirSalas.html">Definir salas</a></li>
+                </ul>
+            </li>
+            <li>Consultas
+                <ul class="submenu">
+                    <li><a href="HorarioPedido.html">Horários do período</a></li>
+                </ul>
+            </li>
+
+            <li> <a href="/Index.html"> Página Inicial</a></li>
+        </ul>
+    </nav>
+    <div class="salas">
+
+        <div class="definirSala">
+
+        
+            <div class="titulo">
+                <H1> Definir sala por Disciplina </H1>
+            </div>
+            
+            <div class="buscarDisciplina">
+                <p> Buscar Disciplina </p>
+                <input type="text" placeholder="Digite o nome da Disciplina">
+                <button> Buscar</button>
+            </div>
+
+            <div class="dropdownDisciplina">
+
+                    <p>Selecionar Disciplina:</p>
+
+                    <!-- <button> Dropdown de Disciplina</button> -->
+                    <select name="languages" id="lang">
+                        <option value="Calculo">Calculo</option>
+                        <option value="Algebra Linear">Algebra Linear</option>
+                        <option value="Programação Orientada a Objeto">Programação Orientada a Objeto</option>
+                        <option value="Gerência de Projeto">Gerência de Projeto</option>
+                        <option value="Linguagem de Programação">Linguagem de Programação</option>
+                        <!-- Adicione outras opções aqui -->
+                    </select>
+            </div>
+
+            <div class="conteudo">
+
+                <div class="disciplina"> 
+                    <p>  Programação Orientada a Objeto - 180h </p>
+                    <button> Definir Sala </button>
+                </div>
+
+                <div class="disciplina"> 
+                    <p>  Estatística - 180h </p>
+                    <button> Definir Sala </button>
+                </div>
+
+                <div class="disciplina"> 
+                    <p>  Algebra - 180h </p>
+                    <button> Definir Sala </button>
+                </div>
+
+                <div class="disciplina"> 
+                    <p>  Algorítmo - 180h </p>
+                    <button> Definir Sala </button>
+                </div>
+            </div>
+
+            <div class="salvar">
+                <button> Salvar </button>
+                <button> Cancelar </button>
+            </div>
+
+        </div>
+
+        <div class="salasDisponiveis">
+            <div class="titulo">
+                <h1>Salas Disponiveis</h1>
+            </div>
+            <div class="conteudo">
+                <p>
+                    Sala Bloco E 201 [ter Qua Qui]
+                </p> <br>
+                <p>
+                    Sala Bloco E 203 [Seg Qua Sex]
+                </p> <br>
+                <p> Sala Bloco  304 [Seg Qui]
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Trabalho de Gerencia de Projeto. Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="/contato">Contato</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
