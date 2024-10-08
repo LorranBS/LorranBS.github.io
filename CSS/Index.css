@@ -1,0 +1,550 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    background-color: #800080;
+    color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.nome-sistema {
+    font-size: 18px;
+    color: #000;
+}
+
+.user-info {
+    background-color: #800080;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav {
+    background-color: #b1abab;
+    padding: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+    margin-right: 30px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilo para o submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e4e1e1;
+    border: 1px solid #000000;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    border-bottom: 1px solid #000000;
+}
+
+.submenu a {
+    padding: 10px 20px;
+    color: #666;
+}
+
+.submenu a:hover {
+    background-color: #e0e0e0;
+}
+
+.corpo{
+    background-color: #4556c0;
+    /* padding: 100px;
+    height: 55vh; */
+    display: flex;
+    align-items: center;
+}
+
+.img_corpo{
+    max-width: 100%;
+    /* max-height: 100%; */
+    width: 100%;
+    height: 100%;
+}
+/*Conteúdo - Avaliação de Desempenho */
+
+.conteudoAvaliacao{
+    background-color: #c0c0c0;
+    height: 75.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudoAvaliacao .avaliacao{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+.conteudoAvaliacao .avaliacao.titulo{
+
+}
+.conteudoAvaliacao .avaliacao .buscarProfessor{
+    
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+.conteudoAvaliacao .avaliacao .dropdownProfessor{
+    
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+
+.conteudoAvaliacao .avaliacao .criteriosAvaliacao{
+    
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+.conteudoAvaliacao .avaliacao .tabelaAvaliacao{
+    
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    
+}
+
+.conteudoAvaliacao .avaliacao .tabelaAvaliacao p{
+    text-align: center;   
+}
+
+.conteudoAvaliacao .avaliacao .comentarios{
+    display: flex;
+    margin-top: 5rem;
+    justify-content:space-around;
+}
+
+.conteudoAvaliacao .avaliacao .salvarAvaliacao{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+
+.conteudoAvaliacao .historicoAvaliaca{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-top: 3rem;
+}
+
+.conteudoAvaliacao .historicoAvaliaca p{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* Definição de professor por disciplina */
+
+.definirProfessor{
+    background-color: #c0c0c0;
+    height: 75.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.definirProfessor .naoDefinido{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+.definirProfessor .naoDefinido .buscaDisciplina{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+
+.definirProfessor .naoDefinido .dropdownDisciplina{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+.definirProfessor .naoDefinido .conteúdo{
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.definirProfessor .naoDefinido .conteúdo .disciplina{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    
+}
+.definirProfessor .naoDefinido .conteúdo .disciplina p{
+    margin-right: 1rem ;
+    
+}
+
+.definirProfessor .naoDefinido .salvarDefinicao{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-around;
+}
+
+.definirProfessor .jaDefinido{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-top: 3rem;
+}
+
+.definirProfessor .jaDefinido .buscaDisciplina{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.definirProfessor .jaDefinido .dropdownDisciplina{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.definirProfessor .jaDefinido .conteudo p{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* Consulta de Carga Horária*/
+
+.cargaHoraria{
+    background-color: #c0c0c0;
+    height: 75.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.cargaHoraria .pesquisa{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+.cargaHoraria .pesquisa .consultar{
+    margin-top: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+
+.cargaHoraria .pesquisa .dropdownProfessor{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around; 
+}
+
+.cargaHoraria .pesquisa .conteudo p{
+    margin-top: 2rem;
+    border: 1px solid black;
+    padding-left: 1rem;
+}
+.cargaHoraria .tabela{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-top: 3rem;
+}
+
+.cargaHoraria .tabela .informacao {
+    margin-top: 1rem;
+}
+
+.cargaHoraria .tabela .informacao p{
+    margin-top: 2rem;
+    border: 1px solid black;
+    width: 25rem;
+    padding-left: 1rem;
+}
+
+/* Afastamento de Professores*/ 
+
+.afastamento{
+    background-color: #c0c0c0;
+    height: 75.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.afastamento .aprovacao{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+.afastamento .aprovacao .consultar{
+    margin-top: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+
+.afastamento .aprovacao .consultar input{
+    width: 12rem;
+}
+
+
+.afastamento .aprovacao .conteudo{
+    margin-top: 1rem;
+}
+.afastamento .aprovacao .solicitacao1{
+    border: 1px solid black;
+    width: 30rem;
+    height: 3rem;
+    margin-top: 1rem;
+    padding-left: 1rem ;
+}
+.afastamento .aprovacao .solicitacao2{
+    border: 1px solid black;
+    width: 30rem;
+    height: 3rem;
+    margin-top: 1rem;
+    padding-left: 1rem ;
+}
+.afastamento .aprovacao .solicitacao3{
+    border: 1px solid black;
+    width: 30rem;
+    height: 3rem;
+    margin-top: 1rem;
+    padding-left: 1rem ;
+}
+
+.afastamento .aprovacao .solicitacao1 .aprovar{
+    display: flex;
+    padding-left: 1rem;
+}
+.afastamento .aprovacao .solicitacao2 .aprovar{
+    display: flex;
+    padding-left: 1rem ;
+}
+.afastamento .aprovacao .solicitacao3 .aprovar{
+    display: flex;
+    
+}
+
+.afastamento .aprovacao .solicitacao1 .aprovar button{
+    margin-left: 1rem;
+    width: 5rem;
+    padding-left: 1rem;
+}
+.afastamento .aprovacao .solicitacao2 .aprovar button{
+    margin-left: 1rem;
+    width: 5rem;
+}
+.afastamento .aprovacao .solicitacao3 .aprovar button{
+    margin-left: 1rem;
+    width: 5rem;
+}
+
+.afastamento .aprovacao .salvar{
+    margin-top: 5rem;
+}
+
+.afastamento .afastados{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-top: 3rem;
+}
+.afastamento .afastados .conteudo{
+    margin-top: 1rem;
+}
+.afastamento .afastados .conteudo p{
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+
+.salas{
+    background-color: #c0c0c0;
+    height: 75.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.salas .definirSala{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+.salas .definirSala .buscarDisciplina{
+    margin-top: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+
+.salas .definirSala .dropdownDisciplina{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around; 
+}
+
+.salas .definirSala .conteudo{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.salas .definirSala .conteudo .disciplina{
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    border: 1px solid black;
+    height: 3rem; 
+    justify-content: space-around;
+    width: 25rem;
+}
+
+
+.salas .definirSala .conteudo .disciplina p{
+    padding-top: 0.5rem;
+}
+.salas .definirSala .conteudo .disciplina button{
+    height: 2rem;
+    margin-top: 0.53rem;
+}
+
+.salas .definirSala .salvar{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.salas .salasDisponiveis{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-top: 3rem;
+}
+
+.salas .salasDisponiveis .conteudo{
+    margin-top: 1rem;
+}
+.salas .salasDisponiveis .conteudo p{
+    margin-top: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.horarioPeriodo{
+    background-color: #c0c0c0;
+    height: 75.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.horarioPeriodo .consultarPeriodo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+.horarioPeriodo .consultarPeriodo .buscarPeriodo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+
+}
+
+.horarioPeriodo .consultarPeriodo .dropdownPeriodo{
+    display: flex;
+    justify-content: space-around ;
+
+    margin-top: 2.5rem;
+}
+
+.horarioPeriodo .gradePeriodo{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-top: 3rem;
+}
+
+.horarioPeriodo .gradePeriodo .titulo{
+    display: flex;
+    justify-content: center;
+}
+
+
+.horarioPeriodo .gradePeriodo .grade{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 0;
+    width: 650px;
+    height: 500px;
+}
+
+.horarioPeriodo .gradePeriodo .grade .itemgrade{
+    border: 2px solid black; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+}
+
+.horarioPeriodo .gradePeriodo .grade .itemgrade .p{
+    color: red;
+}
+
+.horarioPeriodo .gradePeriodo .rodapeGrade {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}   
+
+.horarioPeriodo .gradePeriodo .rodapeGrade .paginas{
+    display: flex;
+    justify-content: space-around;
+    width: 20rem;
+}
+
+footer{
+    background-color: #45c06e;
+    /* padding: 2px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/Index.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="nome-sistema">Nome do Sistema</div>
+        <div class="user-info">
+            <div>Nome:</div>
+            <div>Matricula:</div>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li>Gerenciamento de professor
+                <ul class="submenu">
+                    <li><a href="CargaHoraria.html">Carga horária</a></li>
+                    <li><a href="AvaliacaoDesempenho.html">Avaliação de desempenho</a></li>
+                    <li><a href="Afastamento.html">Afastamento</a></li>
+                </ul>
+            </li>
+            <li>Gerenciamento de disciplina
+                <ul class="submenu">
+                    <li><a href="DefinirProfessor.html">Definir professor</a></li>
+                    <li><a href="DefinirHorario.html">Definir horário</a></li>
+                    <li><a href="DefinirSalas.html">Definir salas</a></li>
+                </ul>
+            </li>
+            <li>Consultas
+                <ul class="submenu">
+                    <li><a href="HorarioPedido.html">Horários do período</a></li>
+                </ul>
+            </li>
+
+            <li> <a href="/Index.html"> Página Inicial</a>
+        </ul>
+    </nav>
+
+
+    <div class="conteudoAvaliacao">
+        <div class="avaliacao">
+
+            <div class= "titulo">
+            <h1>
+            Avaliação de Desempenho
+            </h1>
+            </div>
+
+            <div class="buscarProfessor">
+            <p>
+            Buscar Professor:
+            </p>
+            <input type="text" placeholder="Digite o nome do Professor">
+            <button>
+            Buscar
+            </button>
+            </div>
+
+            <div class="dropdownProfessor">
+
+            <p>Selecionar Professor:</p>
+
+            <!-- <button> Dropdown de Professor </button> -->
+            <select name="languages" id="lang">
+                <option value="João">João</option>
+                <option value="Mario">Mario</option>
+                <option value="Miguel">Miguel</option>
+                <option value="Lucas Carlos">Lucas Carlos</option>
+                <option value="Murilo">Murilo</option>
+                <option value="Bruno">Bruno</option>
+                <!-- Adicione outras opções aqui -->
+            </select>
+
+            </div>
+
+            <div class="criteriosAvaliacao">
+
+            <p> | Critérios de Avaliação |</p>
+
+            </div>
+
+            <div class="tabelaAvaliacao">
+                <p>
+            Qualidades das Aulas: [ 10.0 ] <br>
+            Assiduidadde: [ 10.0 ] <br>
+            Participação em Atividades Extracurriculares: [ 10.0 ] <br>
+            FeedBack dos Alunos:[ 10.0 ] <br>
+            Desenvolvimento Profissional [ 10.0 ]
+                </p>
+            </div>
+
+            <div class="comentarios"> 
+            <p> Comentários Adicionais:</p>
+            <input type="text" placeholder="Digite comentários">
+            </div>
+
+            <div class="salvarAvaliacao">
+            <button> Salvar Avaliação </button>
+            <button> Cancelar Avaliação </button>
+            </div>
+        </div>
+        <div class="historicoAvaliaca">
+
+            <p>
+               | Histórico de Avaliação ANteriores |
+            </p>
+
+            <p>
+                | nome: João | mês: Janeiro | ano: 2024 | média: 10.0 |
+            </p>
+
+            <p> | Comentários |</p>
+
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Trabalho de Gerencia de Projeto. Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="/contato">Contato</a></li>
+        </ul>
+    </footer>
+  
+</body>
+</html>
